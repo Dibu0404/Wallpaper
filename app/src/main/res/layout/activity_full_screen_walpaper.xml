@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_screen_bg"
+    android:layout_margin="2dp"
+    tools:context=".FullScreenWalpaper">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSetwallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_baseline_local_florist_24"
+            android:fontFamily="@font/griffy"
+            android:onClick="SetWallpaperEvent"
+            android:text="Wallpaper"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="normal|italic" />
+
+        <Button
+            android:id="@+id/btnDownloadwallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_baseline"
+            android:fontFamily="@font/griffy"
+            android:onClick="DownloadwallpaperEvent"
+            android:text="DownLoad"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="normal|italic" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_baseline_share_24"
+            android:fontFamily="@font/griffy"
+            android:text="Share"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="normal|italic" />
+    </LinearLayout>
+</RelativeLayout>
